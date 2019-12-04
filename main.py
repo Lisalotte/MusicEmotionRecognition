@@ -10,7 +10,7 @@ if not sys.warnoptions:
     import warnings
     warnings.simplefilter("ignore")
     
-sys.path.append('./Music-Emotion-Recognition/')
+sys.path.append('./Music-Emotion-Recognition2/')
 featEx = __import__('Feature-Extraction')
 
 path = './rs_test/'
