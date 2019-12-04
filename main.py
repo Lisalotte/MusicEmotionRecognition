@@ -1,4 +1,5 @@
 import sys
+import Classification
 
 def warn(*args, **kwargs):
     pass
@@ -10,9 +11,14 @@ if not sys.warnoptions:
     warnings.simplefilter("ignore")
     
 sys.path.append('./Music-Emotion-Recognition/')
-
 featEx = __import__('Feature-Extraction')
 
-path = './rs/'
+path = './rs_test/'
 
 database = featEx.extract_feature(path)
+#Classification.classify()
+
+# TODO
+# Volume normalizeren
+# Stress as omdraaien x
+# Fixed bounds
